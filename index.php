@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>PRACTICE</title>
+<title>IM DIFFERENT</title>
 </head>
 <body>
 <? echo phpinfo() ?>
