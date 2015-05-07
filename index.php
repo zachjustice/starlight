@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>IM DIFFERENT</title>
-</head>
+</head>a;lskfj;alsjf;laksjdf
 <body>
 <? echo phpinfo() ?>
 </html>
