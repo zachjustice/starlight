@@ -19,10 +19,28 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-<? for( $i = 0; $i < 3; $i++ ): ?>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-<? endfor; ?>
+	<nav>
+	    <ul>
+		<li><a href='/index.php'><img src='logo.png'></a></li>
+		<li>
+                    Categories
+		    <div>
+			<ul>
+			    <li>Tier 1</li>
+			    <li>Tier 1</li>
+			    <li>Tier 1</li>
+		    </div>
+		</li>
+		<li><input value="Search Products..." /></li>
+	    </ul>
+
+
+	</nav>
+	
+
+	<? for( $i = 0; $i < 3; $i++ ): ?>
+		<p>Hello world! This is HTML5 Boilerplate.</p>
+	<? endfor; ?>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
