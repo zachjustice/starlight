@@ -23,15 +23,16 @@
 	    <ul>
 		<li><a href='/index.php'><img src='logo.png'></a></li>
 		<li>
-                    Categories
+                    <a href="">Categories <space class="caret" /></a>
 		    <div>
 			<ul>
-			    <li>Tier 1</li>
-			    <li>Tier 1</li>
-			    <li>Tier 1</li>
+			    <li><a href="">Tier 1</a></li>
+			    <li><a href="">Tier 1</a></li>
+			    <li><a href="">Tier 1</a></li>
+                        </ul>
 		    </div>
 		</li>
-		<li><input value="Search Products..." /></li>
+		<li><input placeholder="Search Products..." /></li>
 	    </ul>
 
 
