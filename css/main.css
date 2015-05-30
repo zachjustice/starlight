@@ -8,11 +8,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: white;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -31,14 +26,6 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0 0 0 0;
-    padding: 0;
-}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -52,7 +39,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 /*
@@ -95,35 +82,43 @@ body {
     font-family: bebas;
     font-weight: 300;
     font-size: 15px;
+    margin: 0 0 0 0;
+    width: auto;
 }
 
 /* ================= Nav Bar =================== */
 nav {
-  position: relative;
   background-color: rgb( 65, 64, 66);
-  border-color: transparent;
-  border: transparent;  
-  border-radius: 10px;
+  width: 100%;
 }
 
 nav ul {
-    margin: 0px;
-    padding: 0px;
+    margin:; 0px;
+    padding: 6px 0px 6px 0px;
+    outline: 0px;
+    font-size: 0;
 }
 nav ul li #icon {
+    padding-left: 30px;
+    float: left;
+    clear: right;
+    margin-top: 0px;
     height: 56px;
     width: 64px;
 }
+s
 #icon:hover {
     opacity: .9;
 }
 #menu {
-    position: absolute;
-    margin-top: 10px;
+    position: relative;
+    text-align: center;
     display: inline-block;
-    list-style-type: lower-alpha;
+    list-style-type: none;
     background-color: rgb(179, 209, 53);
-    margin-left: 160px;
+    width: 165px;
+    height: 36px;
+    margin-left: 6%;
     border-radius: 10px 0px 0px 10px; 
     z-index: 999;
    
@@ -139,7 +134,7 @@ nav ul li {
     display: inline-block;
     list-style-type: none;
     border-color: rgb(179, 209, 53);  
-
+    font-size: 20px;
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     -ms-transition: all 0.1s;
@@ -147,62 +142,146 @@ nav ul li {
     transition: all 0.1s; 
 }
 
-nav > ul > li > a > .caret {
-    border-top: 4px solid white;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transition: color 0.2s linear;
-    -moz-transition:    color 0.2s linear;
-    -ms-transition:     color 0.2s linear;
-    -o-transition:      color 0.2s linear;
-    transition:         color 0.2s linear;
-}
+nav > ul > li > a > .caret,
+      nav > ul > li > div ul > li > a > .caret {
+        border-top: 4px solid white;
+        border-bottom: 0px solid transparent;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+  
+        -webkit-transition: color 0.1s linear;
+          -moz-transition: color 0.1s linear;
+        -o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+nav > ul > li > div ul > li > a > .caret {
+        border-bottom: 0px solid transparent;
+        border-top: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-left: 0px solid red;
+        margin: 0 0 0 8px;
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+      }
 
 nav > ul > li > a {
-    text-align: center;
-    color:white;
-    display: block;
-    line-height: 36px;
-    width:86px;
-    text-decoration: none;
+        color: white;
+        display: block;
+        line-height: 36px;
+        text-align: middle;
+        padding: 0 4px 0 4px;
+        text-decoration: none;
 }
-input{
-    -webkit-appearance: none;
-    -webkit-box-shadow:none;
 
+
+#menu:hover {
+    background-color:rgb(115,167,9);
+    border-radius: 10px 0px 0px 0px;
+}
+
+#menu:hover a .caret {
+    border-top-color: rgb( 255, 255, 255 );
+}
+      
+      nav > ul > li > div,
+      nav > ul > li > div ul > li > div {
+        background-color: rgb( 179, 209, 53 );
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+        display: none;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        width: 165px;
+        visibility: hidden;
+  
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+      }
+      
+        nav > ul > li > div ul > li > div {
+            background-color: rgb(179, 209, 53);
+            border-radius: 0 4px 4px 4px;
+            box-shadow: inset 2px 0 5px rgba(0,0,0,.15);
+            margin-top: -42px;
+            right: -165px;
+        }
+
+        nav > ul > li:hover > div,
+        nav > ul > li > div ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+          nav > ul > li > div ul > li,
+          nav > ul > li > div ul > li > div ul > li {
+            display: block;
+            position: relative;
+          }
+
+            nav > ul > li > div ul > li > a,
+            nav > ul > li > div ul > li > div ul > li > a {
+              color: #fff;
+              display: block;
+              padding: 12px 24px;
+              text-decoration: none;
+            }
+
+              nav > ul > li > div ul > li:hover > a {
+                background-color: rgb(115,167,9);
+              }
+    
+
+
+/*Search Bar - Cart - Sign In*/
+input {
     position: relative;
     vertical-align: middle;
+    z-index: 2;
     height: 34px;
-    width: 158%;
+    padding-top:0px none;
+    width: 300px;
     font-family: bebas;
     color: grey;
     box-shadow: none;
     background: white;
-    margin-left: 160px;
-    border: none;
+    margin-left: 0 none;
+    margin-top: -2px;
+    border: 0 none;
     outline: none;
-    text-indent: 100px;
-    border-radius: 10px 0px 0px 10px;
+    text-indent: 20px;
 }
+
  input:focus{
-    -webkit-appearance: none;
     outline: none;
-    border-top:1px solid;
-    border-bottom:1px solid;
-    border-color: rgb(0, 171, 220);
+    border:none;
 }
 
 #s_button {
+    display: inline-block;
     position: absolute;
-    padding-top: 9px;
-    z-index: 10;
-    margin-left: 288px;
-    opacity: .8;
+    margin-top: 1px;
+    font-size: 0px;
+    padding:0px;
+    float: left;  
 }
 #s_button a:hover {
     opacity: .6
+}
+#s_button a:link {
+    padding: 0px;
 }
 #s_button a:active {
     opacity: 1;
@@ -211,11 +290,11 @@ input{
 #signin {  
     float: right;
     padding-right: 30px;
-    padding-top: 8px;
+    padding-top: 0px;
     font-size: 10px;
 }
 #signin a:link {  
-    color:grey;
+    color:white;
 }
 #signin a:hover {  
     text-decoration: underline;
@@ -231,49 +310,210 @@ input{
     height: 30px;
     width: 30px;  
     float: right; 
-    padding-top: 8px;
-    padding-right: 50px;
+    padding-top: 0px;
+    padding-right: 1%;
 }
-#menu:hover {
-    color: rgb( 255, 255, 255 );
-    background-color:rgb( 179, 209, 53 );
-    border-radius: 10px 0px 0px 0px;
-}
-li:hover a .caret {
-    border-top-color: rgb( 255, 255, 255 );
-}
-#tierone {
-    background-color: rgb( 179, 209, 53 );
-    opacity: 0;
-    position: absolute;
-    width: 165px;
-    visibility: hidden;
-    z-index: 100;
-    border-radius: 0px 0px 0px 10px;
+#cart:hover {
     opacity: .9;
-
-
-    -webkit-transiton: opacity 0.1s;
-    -moz-transition: opacity 0.1s;
-    -ms-transition: opacity 0.1s;
-    -o-transition: opacity 0.1s;
-    -transition: opacity 0.1s;
 }
-li:hover #tierone {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+#cart:active {
+    opacity: .5;
 }
-#tierone ul li a {
-    color: #fff;
+/*End of Search Bar - Cart - Sign In*/
+
+/*Top Banner*/
+#title {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 4vw;
+    margin-left: 3%;
+}
+#topbanner {
+    position: relative;
+    vertical-align: top;
+    background-color: rgb(118,165,0);
+    border: 1px solid rgb(118,165,0);
+}
+
+header {
+   position: relative;
+   font-size: 2vw;
+   margin-left: 3%;
+   margin-top: .1%;
+   color: rgb(65, 64, 66); 
+}
+
+#topproducts li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 1%;
+    margin-right: 10vw;
+    border:6px solid;
+    border-color:rgb(0, 171, 220);
+}
+#topproducts {
+    padding: 0px;
+    margin-left: 10vw;
+    margin-right: auto;
+    width: 90%;
+}
+
+#companyinfo{
+    margin-left: 10vw;
+    margin-right: auto;
+    width: 90%
+}
+
+#companyinfo li {
+    list-style: none;
+    display: inline-block;
+}
+
+#andre {
+    list-style: none;
+    display: inline-block;
+    position: absolute; 
+
+}
+
+#about {
+    position: absolute;
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    border:6px solid;
+    border-color:rgb(0, 171, 220);
+    margin-left: 22.5vw;
+}
+#about #aboutbanner {
     display: block;
-    padding: 12px 24px;
+    position: absolute;
+    color: white;
+    background: rgb(65, 64, 66);
+    height: 20%;
+    width: 12vw;
+    text-align: center;
+    font-size: 1vw;
+    opacity: .9;
+    margin: 0px;
+    margin-top: 81%;
+}
+#LED {
+    position: absolute;
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    border:6px solid;
+    border-color:rgb(0, 171, 220);
+    margin-left: 45.5vw;
+}
+#LEDpic {
+    list-style: none;
+    display: inline-block;
+    position: absolute; 
+}
+
+#LED #LEDbanner {
+   display: block;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background: rgb(65, 64, 66);
+    height: 20%;
+    width: 12vw;
+    text-align: center;
+    font-size: 1vw;
+    opacity: .9;
+    margin: 0px;
+    margin-top: 81%;
+}
+
+#learn {
+     position: absolute;
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    border:6px solid;
+    border-color:rgb(0, 171, 220);
+}
+#learnpic {
+    list-style: none;
+    display: inline-block;
+    position: absolute; 
+}
+
+#learn #learnbanner {
+    display: block;
+    position: absolute;
+    color: white;
+    background: rgb(65, 64, 66);
+    height: 20%;
+    width: 12vw;
+    text-align: center;
+    font-size: 1vw;
+    opacity: .9;
+    margin: 0px;
+    margin-top: 81%;
+}
+
+div a:link{
     text-decoration: none;
-    border-radius: 0px 0px 0px 10px;
 }
-li:hover a {
-    background-color: rgba( 179, 209, 53);
+
+#bottombanner {
+    position: relative;
+    width: 99%;
+    height: 100px;
+    background-color:rgb(235, 24, 34);
+    font-size: 48px;
+    color:white;
+    text-align: center;
+    margin-top: 2%;
 }
+
+#bottom {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    background: rgb(65, 64, 66);
+    margin-top: 13%;
+    margin-bottom: 0px;
+}
+
+table {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 24px;
+    text-decoration: none;
+}
+table td a:link{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+table td a:hover{
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+table td a:active{
+    color: grey !important;
+    font-size: 14px;
+    text-decoration: underline;
+}
+table td a:visited{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 
@@ -315,7 +555,6 @@ li:hover a {
 .visuallyhidden.focusable:focus {
     clip: inherit;
     height: auto;
-    margin: 1px;
     overflow: visible;
     position: static;
     width: auto;
@@ -326,7 +565,7 @@ li:hover a {
  */
 
 .invisible {
-    visibility: hidden;
+    visibility: visible;
 }
 
 /*
@@ -357,7 +596,7 @@ li:hover a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 100%) {
     /* Style adjustments for viewports that meet the condition */
 }
 

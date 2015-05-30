@@ -11,7 +11,7 @@
 
 <!-- for IE -->
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico" >
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
@@ -24,7 +24,7 @@
 
         <nav>
             <ul>
-                <li id="icon"><a href="#"><img src="img/Starlight-icon.png" style="width:64px;height:56px"></a></li>
+                <li id="icon"><a href="#"><img src="img/starlight-icon.png" style="width:148px;height:40px"></a></li>
                 <li id="menu">
             <a href="products.html">Products <span class="caret"></span></a>
             <div id="tierone">
@@ -63,14 +63,71 @@
             </div>
         </li>
                 <li id="search"><input placeholder="Search"/></li>
-                <li id="s_button"><a href="#"><img src="img/SearchButton.png" style="width:36px;height:36px"></a></li>
+                <li id="s_button"><a href="#"><img src="img/SearchButton.png" style="width:36px; height:36px"></a></li>
                 <li id="signin" class="c"><a href="#">sign in&#47register</a></li>
-                <li id="cart" class="c"><a href "#"><img src="img/cart.png" alt="Cart" style="width:30px;height:30px"></a></li> 
+                <li id="cart" class="c"><a href "#"><img src="img/Cart.png" alt="Cart" style="width:30px;height:30px"></a></li> 
             </ul>
         </nav>
-            
-	<? for( $i = 0; $i < 3; $i++ ): ?>
-		<p>Hello world! This is HTML5 Boilerplate.</p>
+        <p id="title">Starlight: <br>LEDs and More</p>
+        <div id="topbanner" href="#"><img src="img/topbanner.png" style="max-width:98%; height=2%;"></div>
+
+    <header>Featured Products</header>
+        <div id="topproducts">
+            <ul>
+                <li><a href="#"><img src="img/top_products/product1.png" style="max-height:12vw; max-width:12vw;"></a></li>
+                <li><a href="#"><img src="img/top_products/product2.jpg" style="max-height:12vw; max-width:12vw;"></a></li>
+                <li><a href="#"><img src="img/top_products/product3.png" style="max-height:12vw; max-width:12vw;"></a></li>
+            </ul>
+        </div>
+    <div><a href="#">
+    <p id="bottombanner">Advertisment</p>
+    </a>
+    </div>
+    <header>Learn More</header>
+        <div id="companyinfo">
+            <ul>
+                <div id="about">
+                <li id="andre"><a href="#"><img src="img/Andre.png" style="max-height:100%; max-width:100%;"></a></li>
+                <p id="aboutbanner">About US</p>
+                </div>
+
+                <div id="LED">
+                <li id="LEDpic"><a href="#"><img src="img/LED.png" style="max-height:100%; max-width:100%;"></a></li>
+                <p id="LEDbanner">Why LED</p>
+                </div>
+
+                <div id="learn">
+                <li id="learnpic"><a href="#"><img src="img/Andredad.png" style="max-height:100%; max-width:100%;"></a></li>
+                <p id="learnbanner">Learn More</p>
+                </div>
+            </ul>
+        </div>
+<div id="bottom">
+   <table>
+        <tr>
+            <th>Find us Online</th>
+            <th>More Infomation</th>
+            <th>Why Starlight</th>
+        </tr>
+        <tr>
+            <td><a href="#">Facebook</a></td>
+            <td><a href="#">Contact Us</a></td>
+            <td><a href="#">Why choose us</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Twitter</a></td>
+            <td><a href="#">Security</a></td>
+            <td><a href="#">subtext</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">google</a></td>
+            <td><a href="#">LEDs</a></td>
+            <td><a href="#">subtext</a></td>
+        </tr>
+   </table>
+</div>
+	<? for( $i = 0; $i < 1; $i++ ): ?>
+		<p></p>
 	<? endfor; ?>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
