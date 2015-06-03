@@ -24,6 +24,7 @@
 
         <nav>
             <ul>
+<<<<<<< HEAD
                 <li id="icon"><a href="#"><img src="img/starlight-icon.png" style="width:148px;height:40px"></a></li>
                 <li id="menu">
             <a href="products.html">Products <span class="caret"></span></a>
@@ -66,6 +67,20 @@
                 <li id="s_button"><a href="#"><img src="img/SearchButton.png" style="width:36px; height:36px"></a></li>
                 <li id="signin" class="c"><a href="#">sign in&#47register</a></li>
                 <li id="cart" class="c"><a href "#"><img src="img/Cart.png" alt="Cart" style="width:30px;height:30px"></a></li> 
+=======
+                <li><a href=""><img scr="/img/logo.png" /></a></li>
+                <li>
+                    <a href="">Products <span class="caret"></span></a>
+                    <div>
+                        <ul>
+                            <li><a href="">Tier 1</a></li>
+                            <li><a href="">Tier 1</a></li>
+                            <li><a href="">Tier 1<a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><input placeholder="Search Products..." /></li>
+>>>>>>> acf01511f45f337ed3bd54bdb4a35f08e7b2ef6f
             </ul>
         </nav>
         <p id="title">Starlight: <br>LEDs and More</p>
