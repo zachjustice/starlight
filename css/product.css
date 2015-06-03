@@ -97,7 +97,6 @@ header {
     padding: 0vw 2vw 0vw 2vw;
     background: rgb(212,212,212);
     font-size: 1.2vw;
-    box-shadow: 4px 0px 8px black;
 }
 
 ul.filter {
@@ -111,6 +110,16 @@ ul.filter {
     list-style-type: none;
 }
 
+#sidebar > ul > li > a:link {
+    color: rgb(65, 66, 64) !important;
+    text-decoration: none;
+}
+
+#sidebar > ul > li:active > a {
+    text-decoration: none;
+    color: rgb(65, 66, 64) !important;
+}
+
 input{
     width: 2vw;
 
@@ -119,13 +128,13 @@ input{
     position: absolute;
     margin-top: 2vw;
     margin-left: 15vw;
-    width: 80%;
+    width: 90%;
 }
 
 div.product {
     position: relative;
-    height: 8vw;
-    width: 8vw;
+    height: 20vw;
+    width: 20vw;
     display: inline-table;
     list-style: none;
     margin: 1vw 3vw 1vw 0vw;
@@ -140,7 +149,7 @@ div.product > li {
 div.product > li > a > p.info {
     width:90%;
     height: 20%;
-    font-size: .6vw;
+    font-size: 1.5vw;
     text-align: right;
     background-color: rgb(65, 64, 66);
     position: absolute;

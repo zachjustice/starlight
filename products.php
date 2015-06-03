@@ -27,23 +27,23 @@
             <ul>Price
                 <li>$<input placeholder="min">to  $<input placeholder="max"></li>
             </ul>
-            <ul>header
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
+            <ul>Type
+                <li><a href="">Florescent</a></li>
+                <li><a href="">Incandescent</a></li>
+                <li><a href="">Outdoor</a></li>
+                <li><a href="">LED</a></li>
             </ul>
-            <ul>header
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
+            <ul>Rating
+                <li><a href="">&#9733&#9733&#9733&#9733&#9733&#9733</a></li>
+                <li><a href="">&#9733&#9733&#9733&#9733</a></li>
+                <li><a href="">&#9733&#9733&#9733</a></li>
+                <li><a href="">&#9733&#9733</a></li>
             </ul>
-            <ul>header
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
-                <li>subtext</li>
+            <ul>Wattage
+                <li><a href="">+120W</li>
+                <li><a href="">90W</li>
+                <li><a href="">70W</li>
+                <li><a href="">40W</li>
             </ul>
         </div>
     <header>Products</header>
