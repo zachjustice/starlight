@@ -23,7 +23,7 @@
                 <li><a href="">+120W</li>
                 <li><a href="">90W</li>
                 <li><a href="">70W</li>
-                <li><a href="">40W</li>
+                <li><a href="">40W</a></li>
             </ul>
         </div>
     <header>Products</header>
